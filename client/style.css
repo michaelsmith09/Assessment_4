@@ -1,0 +1,43 @@
+* {
+    padding: 0px;
+    margin:0px;
+    background-color: dimgray;
+}
+
+section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    height: 70px;
+}
+
+form {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color: darkorange;
+    height: 300px;
+    width: 20vw;
+
+}
+
+input {
+    background-color: white;
+}
+
+button {
+    padding:10px;
+    color:white;
+    background-color: rgb(83, 3, 3);
+    border-radius: 10px;
+}
+
+button:hover {
+    box-shadow: 0px 0px 15px slategray;
+}
+
+button:active {
+    transform: translateY(4px);
+}
