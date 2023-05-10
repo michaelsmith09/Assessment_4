@@ -18,9 +18,9 @@ form {
     align-items: center;
     flex-direction: column;
     background-color: darkorange;
-    height: 300px;
+    height: 380px;
     width: 20vw;
-
+    margin-left: 655px;
 }
 
 input {
@@ -36,6 +36,7 @@ button {
 
 button:hover {
     box-shadow: 0px 0px 15px slategray;
+    cursor: pointer;
 }
 
 button:active {

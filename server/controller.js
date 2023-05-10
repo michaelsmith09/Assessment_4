@@ -18,6 +18,15 @@ module.exports = {
 
         res.status(200).send(randomFortune);
     },
+    getFoodIdea: (req, res) => {
+
+        const foods = ["Burger King", "Taco Bell", "Arby's", "Mcdonald's", "In N Out", "Chuckarama", "Wendy's"];
+        
+        let randomIndex = Math.floor(Math.random() * foods.length);
+        let randomfood = foods[randomIndex];
+
+        res.status(200).send(randomfood);
+    },
     addFortune: (req, res) => {
         console.log("worked!")
         const fortune = req.body
@@ -25,5 +34,11 @@ module.exports = {
 
         fortunes.push(fortune)
         res.status(200).send();
+    },
+    deleteFortune: (req, res) => {
+        const { id } = req.params;
+        const index = fortunes.findIndex((e) => e.id === +id);
+        fortunes.splice(index, 1);
+        res.status(200).send(fortune);
     },
 };

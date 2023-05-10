@@ -11,16 +11,16 @@
  
   <body class="container">
     <section>
-    
-        <button id="complimentButton">Get a compliment</button>
-        <button id="fortuneButton">Get a fortune</button>
-
+      <button id="foodButton">Get a food idea</button>
+      <button id="complimentButton">Get a compliment</button>
     </section>
-
-  <form>
-    <input type="text" placeholder="Fortune Cookie Message."/>
-    <button id="addFortuneBtn">Submit Cookie</button>
-  </form>
+    
+    <form>
+      <button id="fortuneButton">Get a fortune</button>
+      <input type="text" placeholder="Fortune Cookie Message."/>
+      <button id="addFortuneBtn">Submit Fortune</button>
+      <button id="delFortuneBtn" onclick="deleteFortune(`${id}`)">Delete A Fortune</button>
+    </form>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="main.js"></script>
