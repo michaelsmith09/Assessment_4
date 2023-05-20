@@ -2,6 +2,7 @@ const complimentBtn = document.getElementById("complimentButton")
 
 const baseURL = `http://localhost:4000/api/fortune`
 
+
 const getCompliment = () => {
     axios.get("http://localhost:4000/api/compliment/")
         .then(res => {
@@ -31,7 +32,7 @@ const getFoodIdea = () => {
         });
 };
 const addFortune = (body) => {
-    // let body = fortune
+    // const {body} = req.body
     axios.post("http://localhost:4000/api/fortune/", body)
         .then(res => {
             alert("Fortune added!");
@@ -39,9 +40,9 @@ const addFortune = (body) => {
 };
 const deleteFortune = (id) => {
     axios.delete(`${baseURL}/${id}`)
-    .then(res => {
-        alert("Fortune removed.")
-    });
+        .then(res => {
+            alert("Fortune removed.")
+        });
 };
 
 
